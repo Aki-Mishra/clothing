@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clothing: Checkout</title>
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+    <div class="alert-box display-none">
+        <img src="img/error.png" class="alert-image " alt="">
+        <p class="alert-massage">Name must be 4 charecter long'</p>
+    </div>
+    <div class="form">
+        <h3 class="address-heading">Delivery Address</h3>
+        <input type="text" placeholder="Address" name="Address" id="Address">
+        <input type="text" placeholder="Street" name="Street" id="Street">
+        <div class="city-state-pincode">
+            <input type="text" placeholder="City" name="City" id="City">
+            <input type="text" placeholder="State" name="State" id="State">
+            <input type="number" placeholder="pin code" name="Pin-code" id="Pin-code">
+        </div>
+        <input type="text" placeholder="land mark" name="land-mark" id="land-mark">
+    </div>
+
+
+    <div class="main-section-for-cart-whislist-and-billing">
+        <div class="product-list">
+            <p class="text heading">your Cart</p>
+            <!-- cart product goes here -->
+            <div class="cart-products">
+
+            </div>
+
+
+        </div>
+        <div class="checkout-section">
+            <div class="checkout-box">
+                <p class="text">Yout total bill</p>
+                <p class="total-bill">0</p>
+                <button class="placeOrder-btn">place order</button>
+            </div>
+
+        </div>
+
+    </div>
+    <footer></footer>
+
+
+
+
+</body>
+<script src="js/nav.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/formData.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/cart.js"></script>
+
+</html>

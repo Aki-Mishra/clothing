@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+}
+.form{
+    width: 100%;
+    padding: 10vh 10vw;
+}
+.address-heading{
+    font-weight: 500;
+}
+.form input{
+   outline: none;
+   border: none;
+   border-radius: 5px ;
+   background-color: #dfdfdf;
+}
+#Address, 
+#Street,
+#land-mark{
+    display: block;
+    width: 100%; 
+    padding: 15px;
+    margin: 10px;
+
+}
+.city-state-pincode{
+    width: 102%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.city-state-pincode input{
+    padding: 15px;
+    margin:  0 10px ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* utility Classes */
+::placeholder{
+    text-transform: capitalize;
+    color: #383838;
+}
+
+
+
+
+/* alert box */
+.alert-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    height: 220px;
+    width: 300px;
+    display: flex;
+    border-radius: 10px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.alert-box>img {
+    height: 100px;
+}
+
+.alert-box>p {
+    color: red;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.display-none {
+    display: none !important;
+}

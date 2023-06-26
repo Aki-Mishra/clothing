@@ -1,0 +1,143 @@
+.heading{
+    text-transform: capitalize;
+    margin: 10vh;
+    padding: 10px;
+    color: #605e5e;
+    font-weight: 300;
+
+}
+.heading span{
+     color: black;
+     font-weight: 500;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    margin: 10vh;
+    grid-gap: 10px;
+}
+
+
+.product-container::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-image .discount-tag {
+    position: absolute;
+    right: 10px;
+    background: white;
+    padding: 5px;
+    top: 5px;
+    color: red;
+    text-transform: capitalize;
+    border-radius: 5px;
+
+}
+
+.product-image .product-thumbnail {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-image .whislist-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-image:hover .whislist-btn {
+    opacity: 1;
+}
+
+.whislist-btn:hover {
+    background-color: #efefef;
+}
+
+.product-info {
+    height: 100px;
+    width: 100%;
+}
+
+.product-info .brand {
+    text-transform: uppercase;
+
+}
+
+.product-info .product-line {
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+.product-info .price {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    padding: 0px 10px;
+}
+
+.product-info .actual-price {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* Button working */
+.next-btn,
+.pre-btn {
+    width: 10vw;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    border: none;
+    padding: 10px;
+    position: absolute;
+    z-index: 8;
+    top: 0;
+}
+
+.pre-btn {
+    left: 0;
+    rotate: 180deg;
+}
+
+.next-btn {
+    right: 0;
+
+}
+
+.arrow-image {
+    opacity: 0.4;
+}
+
+.next-btn:hover .arrow-image,
+.pre-btn:hover .arrow-image {
+    opacity: 1;
+}

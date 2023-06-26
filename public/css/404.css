@@ -1,0 +1,14 @@
+.four-zero-four-image{
+    display: block;
+    margin: 60px auto;
+}
+.four-zero-four-massage{
+    margin: 6vh;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.four-zero-four-massage > span > a{
+   color: black;
+
+}

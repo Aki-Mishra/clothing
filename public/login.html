@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cothing: login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <img src="img/loader.gif" alt="" class="loader display-none">
+
+    <div class="container">
+        <img src="img/dark-logo.png" class="logo" alt="">
+        <div>
+            <div class="alert-box display-none">
+                <img src="img/error.png" alt="">
+                <p class="alert-massage">Name must be 4 charecter long'</p>
+            </div>
+            <input type="email" name="email" autocomplete="off" placeholder="Email" id="email">
+            <input type="password" name="password" autocomplete="off" placeholder="Password" id="password">
+            <button class="create-login-account-btn"> login </button>
+        </div>
+
+        <a href="/signup" class="link">didn't have an account? create one</a>
+    </div>
+    <script src="js/formData.js"></script>
+   <script src="js/signup.js"></script>
+</body>
+
+</html>

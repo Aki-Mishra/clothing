@@ -1,0 +1,102 @@
+footer {
+    padding: 40px 10vw;
+    width: 100%;
+    position: relative;
+    background-color: #383838;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: 160px;
+
+}
+
+.footer-ul-container {
+    width: 45%;
+    position: relative;
+    display: flex;
+}
+
+.category {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 200px;
+}
+
+.category-title {
+    text-transform: capitalize;
+    color: white;
+    grid-column: span 2;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #c2c1c1;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin: 80px 0 15px 10px
+}
+
+.footer-info {
+    margin: 10px;
+    color: white;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.footer-email {
+    color: #cdcbcb;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.footer-telephone-no {
+    color: #cdcbcb;
+    text-transform: capitalize;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.footer-social-container {
+    display: flex;
+    margin: 35px 10px;
+    justify-content: space-between;
+}
+
+.social-link {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    margin: 0px 4px;
+}
+.social-credit{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 8px;
+}
+.social-credit p{
+    text-transform: capitalize;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing: Seller</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/seller.css">
+</head>
+
+<body>
+
+    <img src="img/loader.gif" alt="" class="loader display-none">
+
+    <img src="./img/dark-logo.png" class="logo" alt="">
+
+    <div class="alert-box display-none ">
+        <img src="img/error.png" alt="">
+        <p class="alert-massage">Plase fil all the information</p>
+    </div>
+
+    <!-- become seller element -->
+    <div class="become-seller ">
+        <p class="heading">become a seller</p>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda facere dolor
+            amet consequuntur. Consequuntur cum rem aspernatur dignissimos, nostrum ab odit quod eum quae quaerat
+            debitis optio veritatis, voluptatibus error! Ullam porro deserunt perferendis aut. Dolor ipsum, iure vero
+            voluptatibus consequuntur velit expedita? Accusantium dicta voluptatem ratione nisi vel illo, deserunt ex
+            repudiandae nobis rerum, ad, eos quaerat dolorem! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Recusandae tenetur quis illo pariatur fuga error deserunt fugit, impedit nam aperiam!</p>
+        <button class="apply-btn btn">apply for seller Account</button>
+    </div>
+
+
+    <!-- seller form -->
+    <div class="seller-form display-none">
+        <input type="text" name="Bussinessname" autocomplete="off" placeholder="Bussiness name/ company name/ shop name"
+            id="Bussinessname">
+        <textarea name="address" id="address" autocomplete="off" placeholder="address"></textarea>
+        <textarea name="about" id="about" autocomplete="off" placeholder="about"></textarea>
+        <input type="text" name="number" autocomplete="off" placeholder="number" id="number">
+        <div class="checkbox-div">
+            <input type="checkbox" name="termAndConditions" id="TAC">
+            <label for="TAC">Agree with out <a href="">Term and conditions</a></label>
+        </div>
+        <div class="checkbox-div">
+            <input type="checkbox" name="ligit" id="ligit">
+            <label for="ligit">All the information is ligit</label>
+        </div>
+
+        <button class="seller-form-btn"> become a seller</button>
+    </div>
+
+    <!-- Add product -->
+    <div class="product-listing display-none">
+        <div class="add-product">
+            <p>add product</p>
+            <button class=""><a href="/addProduct" target="_blank" class="btn">add product </a></button>
+        </div>
+        <img src="img/no-products.png" class="no-products display-none" alt="">
+
+        <!-- delete alert fuction -->
+        <div class="delete-alert ">
+            <div class="alert">
+                <button class="close-btn"><img src="./img/close.png" alt=""></button>
+                <img src="./img/delete-warning.png" class="delete-svg" alt="">
+                <p class="text">are you sure you want to delete this product</p>
+                <button id="conifirm-delete-btn">delete</button>
+            </div>
+        </div>
+        <!-- cards -->
+        <div class="product-container ">
+            <!-- <div class="product-card">
+                <div class="product-image">
+                    <span class="draft-tag">draft</span>
+                    <img src="img/card5.png" alt="" class="product-thumbnail">
+                    <button class="card-action-btn edit-btn"><img src="img/edit.png" alt=""></button>
+                    <button class="card-action-btn open-btn"><img src="img/open.png" alt=""></button>
+                    <button class="card-action-btn delete-btn" onclick="massage()"><img src="img/delete.png" alt=""></button>
+          
+                </div>
+                <div class="product-info">
+                    <p class="brand">Brand</p>
+                    <p class="product-line">A short line about the project</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+        </div> -->
+    </div>
+
+
+    <script src="js/formData.js"></script>
+    <script src="./js/seller.js"></script>
+    <script src="./js/createProduct.js"></script>
+
+
+</body>
+
+</html>

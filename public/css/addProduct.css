@@ -1,0 +1,199 @@
+body {
+    display: block;
+    padding: 0 10vw;
+}
+
+/* you have to add camera icon on the add procut page  
+  content: attr(value);
+  */
+.alert-box {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    margin: 20px auto 50px;
+}
+
+input,
+textarea {
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+input:not(input[type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 270px;
+    resize: none;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+}
+
+.product-info {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: .75fr 1.25fr;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    grid-row: 1/span2;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #fff;
+    margin-right: 20px;
+}
+
+.uploade-image-sec {
+    margin-bottom: 10px;
+}
+
+.uploade-image-sec,
+.select-sizes {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+#camera-img {
+    height: 20px;
+    top: 4px;
+    position: relative;
+}
+
+.upload-catalouge {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.upload-image {
+    width: 100%;
+    height: 100px;
+    background: #bbbbbb;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.upload-image:hover {
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.select-sizes {
+    margin-top: 10px;
+}
+
+.sizes {
+
+    margin-top: 30px;
+}
+
+.size-checkbox {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #383838;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+    color: #383838;
+
+}
+
+.size-checkbox::after {
+    content: attr(value);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.size-checkbox:checked {
+    color: white;
+    background-color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product-price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product-price input {
+    margin-top: 0 !important;
+
+}
+
+input[type="number"] {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkbox {
+    transform: translate(-2px, 2px);
+}
+
+label[for="tac"] {
+    text-transform: capitalize;
+}
+
+.buttons {
+    margin: 20px 0 50px;
+    padding-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 30px;
+    text-transform: capitali;
+    color: #fff;
+    background-color: #383838;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+#draft-btn {
+    background-color: #a9a9a9;
+
+}
+
+/* Utility classes */
+.text {
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 20px;
+    font-weight: 500;
+
+}
