@@ -1,26 +1,22 @@
 require('dotenv').config();   // Make sure this is on top
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
 const path = require('path');
 const bcrypt = require('bcryptjs');
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
-const nodemailer = require('nodemailer');
 const collection = require('./database/userDatabase');
 const sellerDatabase = require('./database/sellerDatabase');
 const productDatabase = require('./database/productDatabse');
 const orderDatabase = require('./database/orderDatabase');
 const auth = require('./auth');
-const { resolve6 } = require('dns/promises');
+
 
 // aws setup
 const aws = require('aws-sdk');
 const crypto = require('crypto');
-const { promisify } = require('util');
-const { error } = require('console');
-const { isErrored } = require('nodemailer/lib/xoauth2');
-const randomBytes = promisify(crypto.randomBytes);
+
+
 
 
 
