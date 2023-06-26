@@ -66,7 +66,7 @@ mongoose.connect(process.env.DATABASE, {
 }).then(() => {
     console.log("Connection sucessfull");
 }).catch(err => {
-    console.log("not connected" + err);
+    console.log("not connected " + err);
 })
 
 
