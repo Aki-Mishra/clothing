@@ -181,12 +181,7 @@ app.post('/signup', async (req, res) => {
         return res.json({ 'alert': 'email already exists' })
     }
 })
-/* The above code is a server-side code written in JavaScript using the Express framework. It defines a
-route for handling a POST request to '/login'. The code first checks if the email and password
-fields are not empty. If either of them is empty, it returns a JSON response with an alert message.
-If both fields are not empty, it queries a MongoDB collection to find a user with the given email.
-If the user is not found, it returns a JSON response with an alert message. If the user is found, it
-compares the password provided by the user with the hashed password stored in the database */
+
 app.post('/login', async (req, res) => {
     try {
         if (!req.body.email.length) {
