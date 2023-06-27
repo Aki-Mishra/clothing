@@ -223,7 +223,7 @@ app.post('/login', async (req, res) => {
         }
     } catch (error) {
         console.log('there is error while login ' + error)
-        res.json({ 'alert': 'invaild logindetails' })
+        res.json({ 'alert': 'Try Again'+ error })
     }
 })
 app.post('/seller', async (req, res) => {
