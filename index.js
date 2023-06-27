@@ -119,10 +119,10 @@ app.get('/product/:id', (req, res) => {
 app.get('/cart', (req, res) => {
     res.sendFile(path.join(staticPath, 'cart.html'))
 })
-app.get('/search', (req, res)=>{
+app.get('/search', (req, res) => {
     res.sendFile(path.join(staticPath, 'search.html'));
 })
-app.get('/search/:value', (req, res)=>{
+app.get('/search/:value', (req, res) => {
     res.sendFile(path.join(staticPath, 'search.html'));
 })
 app.get("/checkout", (req, res) => {
@@ -213,12 +213,11 @@ app.post('/login', async (req, res) => {
                         httpOnly: true
                     }
                     res.cookie('Clothing', token, options)
-
                     res.json({ 'loginUser': recivedData })
 
                 }
                 else {
-                    res.json({ 'alert': 'invaild login details' })
+                    res.json({ 'alert': 'invaild login details' + recivedData})
                 }
             }
         }
@@ -373,7 +372,7 @@ app.post('/get-product', async (req, res) => {
     } else if (email) {
         data = await productDatabase.find({ sellerEmail: email });
     } else if (tag) {
-        data = await productDatabase.find({ tags: { $in: [tag]}, draft: false});
+        data = await productDatabase.find({ tags: { $in: [tag] }, draft: false });
     }
 
     let productArr = [];
@@ -401,15 +400,15 @@ app.post('/delete=product', async (req, res) => {
 })
 app.post('/order', async (req, res) => {
 
- 
-        let { address, email, cart } = req.body;
-        let orderDatabase2 = new orderDatabase({
-            email: email,
-            cart: cart,
-            address: address,
-        })
-        await orderDatabase2.save();
-        return res.json({ "alert": 'Order placed sucessfully' });
+
+    let { address, email, cart } = req.body;
+    let orderDatabase2 = new orderDatabase({
+        email: email,
+        cart: cart,
+        address: address,
+    })
+    await orderDatabase2.save();
+    return res.json({ "alert": 'Order placed sucessfully' });
 })
 // Error route
 app.get('/404', (req, res) => {

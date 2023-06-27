@@ -25,7 +25,6 @@ const sendData = (path, data) => {
     }).then((res) => {
         // console.log(res)
         return res.json()
-
     }).then((response) => {
         // console.log(response)
         SecondValidation(response)
@@ -39,6 +38,7 @@ const SecondValidation = (data) => {
     loader.classList.add('display-none')
     if (data.alert) {
         showAlert(data.alert)
+        console.log(data.alert)
     } else if (data.signup) { // this is for if the signup is sucessfull
         location.replace('/login')
 
