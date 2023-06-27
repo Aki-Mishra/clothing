@@ -31,8 +31,8 @@ const createnav = () => {
 }
 
 createnav()
-document.cookie = 'MyName' +'=' +'akshat';
-document.cookie =  'MyName =; Path=/; Expires=Thu, 1 Jan 1970 00:00:01 GMT; ';
+document.cookie = 'MyName' + '=' + 'akshat';
+document.cookie = 'MyName =; Path=/; Expires=Thu, 1 Jan 1970 00:00:01 GMT; ';
 
 
 // nav popup
@@ -47,14 +47,15 @@ userBtn.addEventListener('click', () => {
 })
 
 
-window.onload = () => {
+window.addEventListener('load', () => {
     let user = localStorage.getItem('clothingUser')
+    console.log(user)
     user = JSON.parse(user);
 
     if (user != null) { // means user is loged in
         accountInfo.innerHTML = `loged in as <span class="user-name">${user.name}</span>`
         loginBtn.innerHTML = 'logout'
-        loginBtn.addEventListener('click', ()=>{
+        loginBtn.addEventListener('click', () => {
             localStorage.removeItem('clothingUser')
             location.reload();
             // deleting the token stored as cookie
@@ -64,21 +65,20 @@ window.onload = () => {
     else { // means user is not loged in
         accountInfo.innerHTML = 'login to place an order'
         loginBtn.innerHTML = 'login'
+        console.log("Hai")
         loginBtn.addEventListener('click', () => {
-            location.href = 'login'
+            location.href = '/login'
         })
     }
-}
+})
 
 
 
 // search button working
 let searchBtn = document.querySelector(".search-button");
 console.log(searchBtn)
-searchBtn.addEventListener('click', ()=>{
+searchBtn.addEventListener('click', () => {
     let searchBox = document.querySelector('.search-box');
     let search = searchBox.value;
     location.href = `/search/${search}`
-
-    
 })
